@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+     <img class="header__logo" src="./imagenes/Logo-alura.svg" alt="logo de alura" >
+    </header>
+
+    <main>
+        <section class="container__uno">
+
+           <textarea class="area__texto" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="terminos">
+                <h6 class="informacion__alerta"><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="botones__encritar" type="button" onclick="btnEncriptar()">Encriptar</button>
+                
+                <button class="botones__desencritar" type="button"  onclick="btnDesencriptar()">Desencriptar</button>
+                
+            </div>
+        </section>
+
+        <section class="container__dos">
+
+            <img src="./imagenes/Muñecomuneco.svg.svg" alt="muneco" class="muneco">
+
+            <textarea class="mensaje" type="evaluar" readonly name="" id="" cols="30" rows="10"></textarea>
+           
+            <div class="conteiner__box__2">
+                <h2 class="texto__uno" id="titulo__Mensaje">Ningún mensaje fue <br> encontrado</h2>
+                <p class="texto__dos" id="parrafo">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>                
+            <button class="boton__copiar" type="button"  onclick="copiar()" style="display:block;">Copiar</button>
+                  
+            
+        </section>
+    </main>
+
+    <footer>
+
+       <p class="rodapie">&copy; 2024- Encriptador de Texto - Desarrollado por: Karen Solis </p> 
+
+    </footer>
+     <script src="./js/scritp.js"></script>
+</body>
+</html>
